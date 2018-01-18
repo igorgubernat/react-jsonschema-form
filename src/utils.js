@@ -274,6 +274,7 @@ export function orderProperties(properties, order) {
     arr.length > 1
       ? `properties '${arr.join("', '")}'`
       : `property '${arr[0]}'`;
+
   const propertyHash = arrayToHash(properties);
   const orderFiltered = order.filter(
     prop => prop === "*" || propertyHash[prop]
